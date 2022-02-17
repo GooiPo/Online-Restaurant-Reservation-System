@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>reservation </title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <script src="scripts/reserve-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body onload="init()">
+
+
+    <div class="nav">
+        <div class="nav-time">
+            <span>Monday to Saturday</span>
+            <span id="hours">10am to 11pm</span>
+        </div>
+        <div class="nav-item">
+            <a href="./index_manager.html">Home</a>
+        </div>
+        <div class="nav-item">
+            <a href="./menu_manager.html" >Menu</a>
+        </div>
+        <div class="nav-item">
+            <a href="./contact_manager.html">Contact</a>
+        </div>
+        <div class="nav-item">
+            <a id="currentPage" href="./reservation_manager.html">Reservation</a>
+        </div>
+        <div class="nav-item" id='usericon'>
+            <a href="./sign_in.html"><div class="icon1">
+                </div></a>
+        </div>
+    </div>
+
+
+
+
+    <div class="content-box">
+        <div class=image-holder id=im1></div>
+        <div class=brand-items>
+            <div class="name-text-lg">Sun-Knight</div>
+            <div class="name-text-sm">Restaurant</div>
+
+        </div>
+
+    </div>
+
+
+
+    
+
+
+    <div class="name-text-lg" id="myreservationlist">reservation</div>
+    <div class="name-text-lg" id="clearall" onclick="clearReser()"> clear reservation</div>
+    <div class="intro-text-part" id = "reser-info">
+
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-box">
+            <div class="name-text-lg" id="footer-lg">Sun Knight<br></div>
+            <div class="name-text-sm" id="footer-sm">1919 YJ Avenue
+Saskatoon SK S7N 5A2<br></div>
+            <div class="name-text-sm" id="footer-sm">(306)123-4567</div>
+        </div>
+        <div class="footer-box">
+            <div class="glass" id="footer-glass">
+                <img id="glass-icon-4" src="icons/glass-4.svg">
+                <img id="glass-icon-5" src="icons/glass-5.svg">
+                <img id="glass-icon-6" src="icons/glass-6.svg">
+            </div>
+        </div>
+        <div class="footer-box">
+            <div class="name-text-lg" id="footer-lg">Follow Us</div>
+            <div class="glass" id="footer-glass">
+                <a href="https://www.instagram.com/?hl=en"><img id="social-icon-2" src="icons/instagram.svg"></a>
+                <a href="https://www.facebook.com/"><img id="social-icon-1" src="icons/facebook.svg"></a>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

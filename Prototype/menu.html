@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>AWSL menu</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <script src="scripts/menu-user-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+<body onload="init()">
+
+
+    <div class="nav">
+        <div class="nav-time">
+            <span>Monday to Saturday</span>
+            <span id="hours">10am to 11pm</span>
+        </div>
+        <div class="nav-item">
+            <a href="./index.html">Home</a>
+        </div>
+        <div class="nav-item">
+                <a id="currentPage" href="./menu.html" >Menu</a>
+        </div>
+        <div class="nav-item">
+            <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav-item">
+            <a href="./reserve.html">Reservation</a>
+        </div>
+        <div class="nav-item" id='usericon'>
+            <a href="./sign_in.html"><div class="icon1">
+                </div></a>
+        </div>
+    </div>
+
+
+
+    <div class="content-box">
+        <div class=image-holder id=im7></div>
+        <div class=brand-items>
+            <div class="name-text-lg">Sun-Knight</div>
+            <div class="name-text-sm">Taste the Orient</div>
+        </div>
+    </div>
+
+
+
+    <div class="intro-text-part">
+        We are consistently updating our dinner menu to reflect the seasons and our ever evolving tastes.
+        Our menu is driven by the deliious and nourishing food that we love to eat and can eat every day in food conscience.
+        Our beverage program is diverse and curated with the same passion we put into our food.
+    </div>
+    
+    <div class=intro-text-part id=buttPlace>
+        <input class="reservebox" type="number" name="reservationid" placeholder="the Reservation ID"><br><br>
+        <button id="menubutton" onclick="submitOrder()">submit</button>
+    </div>
+
+
+
+
+    <div class="content-box">
+        <div class="name-text-sm" id="payment"><a href="./checkorder.html"> My Bill</a></div>
+        <div class=image-holder id=im8>
+        </div>
+        <div class="name-text-lg" id="menu-text1">food</div>
+    </div>
+
+
+
+    <div class="content-box" id="menudetail">
+    </div>
+    <div class="intro-text-part" id="cart-display">
+    </div>
+
+
+    <div class="content-box">
+        <div class="name-text-sm" id="payment"><a href="./checkorder.html"> My Bill</a></div>
+        <div class=image-holder id=im9>
+        </div>
+        <div class="name-text-lg" id="menu-text2">drink</div>
+    </div>
+
+
+
+
+    <div class="content-box" id="drinkdetail">
+    </div>
+        <div class="intro-text-part" id="cart-display-drink">
+    </div>
+
+    
+    <!--<div class=intro-text-part id=buttPlace>-->
+    <!--    <input class="reservebox" type="number" name="reservationid" placeholder="the Reservation ID"><br><br>-->
+    <!--    <button id="menubutton" onclick="submitOrder()">submit</button>-->
+    <!--</div>-->
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-box">
+            <div class="name-text-lg" id="footer-lg">Sun Knight<br></div>
+            <div class="name-text-sm" id="footer-sm">1919 YJ Avenue
+Saskatoon SK S7N 5A2<br></div>
+            <div class="name-text-sm" id="footer-sm">(306)123-4567</div>
+        </div>
+        <div class="footer-box">
+            <div class="glass" id="footer-glass">
+                <img id="glass-icon-4" src="icons/glass-4.svg">
+                <img id="glass-icon-5" src="icons/glass-5.svg">
+                <img id="glass-icon-6" src="icons/glass-6.svg">
+            </div>
+        </div>
+        <div class="footer-box">
+            <div class="name-text-lg" id="footer-lg">Follow Us</div>
+            <div class="glass" id="footer-glass">
+                <a href="https://www.instagram.com/?hl=en"><img id="social-icon-2" src="icons/instagram.svg"></a>
+                <a href="https://www.facebook.com/"><img id="social-icon-1" src="icons/facebook.svg"></a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

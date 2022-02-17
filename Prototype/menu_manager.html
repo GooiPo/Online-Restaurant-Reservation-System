@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>AWSL menu for manager</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <script src="scripts/menu-manager-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+<body onload="init()">
+
+
+    <div class="nav">
+        <div class="nav-time">
+            <span>Monday to Saturday</span>
+            <span id="hours">10am to 11pm</span>
+        </div>
+        <div class="nav-item">
+            <a href="./index_manager.html">Home</a>
+        </div>
+        <div class="nav-item">
+            <a id="currentPage" href="./menu_manager.html" >Menu</a>
+        </div>
+        <div class="nav-item">
+            <a href="./contact_manager.html">Contact</a>
+        </div>
+        <div class="nav-item">
+            <a href="./reservation_manager.html">Reservation</a>
+        </div>
+        <div class="nav-item" id='usericon'>
+            <a href="./sign_in.html"><div class="icon1">
+                </div></a>
+        </div>
+    </div>
+
+
+
+    <div class="content-box">
+        <div class=image-holder id=im7></div>
+        <div class=brand-items>
+            <div class="name-text-lg">Sun-Knight</div>
+            <div class="name-text-sm">Taste the Orient</div>
+        </div>
+    </div>
+
+
+    <div class="intro-text-part">
+        We are consistently updating our dinner menu to reflect the seasons and our ever evolving tastes.
+        Our menu is driven by the deliious and nourishing food that we love to eat and can eat every day in food conscience.
+        Our beverage program is diverse and curated with the same passion we put into our food.
+    </div>
+
+
+
+
+    <div class="content-box">
+        
+        <div class=image-holder id=im8>
+        </div>
+        <div class="name-text-lg" id="menu-text1">food</div>
+    </div>
+
+
+
+    <div class="content-box" id="menudetail">
+    </div>
+
+
+
+    <div class="content-box">
+
+        <div class=image-holder id=im9>
+        </div>
+        <div class="name-text-lg" id="menu-text2">drink</div>
+    </div>
+
+
+
+
+    <div class="content-box" id="drinkdetail">
+    </div>
+
+    <div class="content-box" id="Manager_input_holder">
+        <table>
+            <tr>
+
+            </tr>
+            <tr>
+                <td class="reserveBoxName">Item Name:<input class="reservebox" type="text" name="Itemname" placeholder="Item Name"></td>
+                
+                <td class="reserveBoxName">Item price:<input class="reservebox" type="number" name="itemprice" placeholder="Item price"></td>
+            </tr>
+            <tr>
+                <td class="reserveBoxName">ItemImgName:<input class="reservebox" type="text" name="ItemImg" placeholder="ImgName +.jpg etc"></td> 
+                
+                <td class="reserveBoxName">Item type: <select name="Itemtype" class="reservebox"> 
+                <option value="Drink">Drink</option> 
+                <option value="Food" selected>Food</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="reserveBoxName">Item describution:<textarea class="reservebox" id ='itemdes' type="text" name="itemdescribution" placeholder="Item describution, like the ingredients"></textarea></td>
+                <td><button id="butt"  onclick="additem()">submit</button></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footer-box">
+            <div class="name-text-lg" id="footer-lg">Sun Knight<br></div>
+            <div class="name-text-sm" id="footer-sm">1919 YJ Avenue
+Saskatoon SK S7N 5A2<br></div>
+            <div class="name-text-sm" id="footer-sm">(306)123-4567</div>
+        </div>
+        <div class="footer-box">
+            <div class="glass" id="footer-glass">
+                <img id="glass-icon-4" src="icons/glass-4.svg">
+                <img id="glass-icon-5" src="icons/glass-5.svg">
+                <img id="glass-icon-6" src="icons/glass-6.svg">
+            </div>
+        </div>
+        <div class="footer-box">
+            <div class="name-text-lg" id="footer-lg">Follow Us</div>
+            <div class="glass" id="footer-glass">
+                <a href="https://www.instagram.com/?hl=en"><img id="social-icon-2" src="icons/instagram.svg"></a>
+                <a href="https://www.facebook.com/"><img id="social-icon-1" src="icons/facebook.svg"></a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

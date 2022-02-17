@@ -1,0 +1,4 @@
+Flask
+Flask-MySQL
+Flask-RESTful
+flask-cors

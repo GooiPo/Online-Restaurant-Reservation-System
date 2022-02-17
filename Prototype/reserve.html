@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>reservation </title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <script src="scripts/reserve-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="nav">
+        <div class="nav-time">
+            <span>Monday to Saturday</span>
+            <span id="hours">10am to 11pm</span>
+        </div>
+        <div class="nav-item">
+            <a href="./index.html">Home</a>
+        </div>
+        <div class="nav-item">
+                <a href="./menu.html" >Menu</a>
+        </div>
+        <div class="nav-item">
+            <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav-item">
+            <a id="currentPage" href="./reserve.html">Reservation</a>
+        </div>
+        <div class="nav-item" id='usericon'>
+            <a href="./sign_in.html"><div class="icon1">
+                </div></a>
+        </div>
+    </div>
+
+
+
+
+    <div class="content-box">
+        <div class=image-holder id=im1></div>
+        <div class=brand-items>
+            <div class="name-text-lg">Sun-Knight</div>
+            <div class="name-text-sm">Taste the Orient</div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="intro-text-part" id="input-part">
+        
+        
+        <table>
+            
+            <tr>
+                <td>Card Number:<br><input class="reservebox" type="text" name="cardnum" placeholder="Card Number"></td>
+                <td>Email:<br><input class="reservebox" type="email" name="email" placeholder="Email"></td>
+            </tr>
+            <tr>
+                <td>PassWord:<br><input class="reservebox" type="password" name="psw" placeholder="Credit Card Password"></td>
+                <td style="text-align:center;"><br><img src="./images/credit%20cards.png" style="width: 15vw"></td>
+            </tr>
+            <tr>
+                <td>Expiry date:<br><input class="reservebox" type="text" name="exDate" placeholder="Expiry Date"></td>
+                <td>Security Code:<br><input class="reservebox" type="text" name="scode" placeholder="Security Code"></td>
+            </tr>
+            
+            
+  
+            <tr>
+                
+                <td>
+                    First name:<br><input class="reservebox" type="text" name="fname" placeholder="firstname"></td>
+                
+                <td>Last name:<br><input class="reservebox" type="text" name="lname" placeholder="lastname"></td>
+            </tr>
+            <tr>
+                
+                <td>date:<br><input class="reservebox" type=date name=input_date value=""></td>
+                
+                <td>size:<br><input class="reservebox" type="number" name="partysize" placeholder="Number of People"></td>
+            </tr>
+            <tr>
+                
+                <td colspan="2">preferred seat location<br>            
+                    <input class="reservebox" list="seatlocattion" placeholder="choose or type" name="seats">
+                        <datalist id="seatlocattion">
+                            <option value="next to window">
+                            </option>
+                            <option value="next to door">
+                            </option>
+                            <option value="away from door">
+                            </option>
+                            <option value="away from window">
+                            </option>
+                        </datalist>
+                </td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="2" style="text-align:center">
+                        <br><input class="reservebox" id = "butt" type="submit" onclick="storeReservation()">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-box">
+            <div class="name-text-lg" id="footer-lg">Sun Knight<br></div>
+            <div class="name-text-sm" id="footer-sm">1919 YJ Avenue
+Saskatoon SK S7N 5A2<br></div>
+            <div class="name-text-sm" id="footer-sm">(306)123-4567</div>
+        </div>
+        <div class="footer-box">
+            <div class="glass" id="footer-glass">
+                <img id="glass-icon-4" src="icons/glass-4.svg">
+                <img id="glass-icon-5" src="icons/glass-5.svg">
+                <img id="glass-icon-6" src="icons/glass-6.svg">
+            </div>
+        </div>
+        <div class="footer-box">
+            <div class="name-text-lg" id="footer-lg">Follow Us</div>
+            <div class="glass" id="footer-glass">
+                <a href="https://www.instagram.com/?hl=en"><img id="social-icon-2" src="icons/instagram.svg"></a>
+                <a href="https://www.facebook.com/"><img id="social-icon-1" src="icons/facebook.svg"></a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

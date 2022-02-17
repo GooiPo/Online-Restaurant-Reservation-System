@@ -1,0 +1,869 @@
+@font-face {
+    font-family: 'eczarbold';
+    src: url('fonts/eczar-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'space-mono';
+    src: url('fonts/SpaceMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-image: url(../imgmaterial/siderwordsbackground.png);
+    
+    background-repeat: repeat;
+    background-size:auto;
+
+    background-color:beige;
+    
+    margin:0;
+
+
+}
+
+.nav {
+    display: flex;
+    height: 5vw;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 3% 6% 0.7% 6%;
+    padding-left:12vw;
+    padding-right:10vw;
+    background-image: url(../imgmaterial/ltiitlelogo.png);
+    background-repeat: no-repeat;
+    background-size:100vw,5vw;
+    background-color: burlywood;
+    margin:0vw;
+}
+
+
+
+.nav-time {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'eczarbold';
+    color: black;
+    font-size: 1vw;
+    line-height: 1;
+    padding: 0 8% 0 0;
+    margin-right: 2.1vw;
+}
+
+.nav-item {
+    margin-top: 12px;
+    float:right;
+    font-family: 'eczarbold';
+    padding: 0 8% 0 0;
+    font-size: 1.5vw;
+}
+
+.nav-item a{
+    color: black;
+}
+
+.nav-item a:active {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+}
+
+a {
+    text-decoration-line: none;
+    text-decoration-color: black;
+}
+
+#currentPage {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+}
+
+#hours {
+    margin-top: 2%;
+    padding-bottom: 4%;
+}
+
+#hours:before {
+    content: '...';
+    font-size: 3vw;
+    font-family: times;
+    color: black;
+    position: absolute;
+    left: 22%;
+    top: 0%;
+}
+
+#reserve {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0 0 2vw 0;
+    min-width: 14%;
+    /* 20 this is so the text doesn't wrap at certain window widths*/
+
+
+}
+
+.nav-item a:hover {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+}
+
+
+#usericon a{
+    border-bottom-width: 0vw;
+    position: relative;
+    bottom: 2vw;
+}
+
+#reserve a {
+    text-decoration: none;
+    padding-bottom: 1.5%;
+}
+
+#menu-text2 {
+    font-size: 8vw;
+    top: 18vw;
+    padding: 0;
+    margin-right: 0;
+}
+
+#menu-text2 a {
+    border-bottom-width: 0vw;
+
+}
+
+#menu-text2:after {
+    position: absolute;
+    /* took me 1 hr to find this centring hack
+    on the web (next 3 lines)*/
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 7vw;
+    content: '';
+    width: 20vw;
+    height: 0.6vw;
+    background: #5A5B6D;
+    bottom: -0.8vw;
+}
+
+
+.content-box {
+    position: relative;
+    width: 95vw;
+    height: 49vw;
+    
+}
+
+#Manager_input_holder{
+    height: auto;
+    width: auto;
+    padding: 10vw 20vw 20vw 20vw;
+}
+
+
+#menuitemhoder{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 5vw;
+}
+#menudetail{
+    height:auto;
+    width:70vw;
+    margin-top: 5vw;
+    padding-left:20vw;
+    padding-right:5vw;
+}
+#drinkdetail{
+    height:auto;
+    width:55vw;
+    margin-top: 5vw;
+    padding-left:20vw;
+    padding-right:20vw;
+}
+
+.left-text {
+    justify-content: center;
+
+}
+
+#location-box {
+    position:relative;
+    top: 8vw;
+    left: 56vw;
+    height: 29vw;
+    width:30vw;
+    font-family: "space-mono";
+}
+
+#location-box-contactPage {
+    position:relative;
+    top: 8vw;
+    left: 56vw;
+    height: 29vw;
+    width:40vw;
+    font-family: "space-mono";
+}
+
+.right-text {
+    position: absolute;
+    width: 50vw;
+    height: 49vw;
+    justify-content: center;
+    top: 5vw;
+    left: 40vw;
+    word-wrap: break-word;
+    word-break: break-word;
+    color: #ACB9C8;
+    font-size: 2vw;
+    font-family: "eczarbold";
+    
+
+    
+    
+}
+
+.right-text  a {
+    color: #ACB9C8;
+    text-decoration: none;
+    padding-bottom: 1vw;
+    border-bottom-style: solid;
+    border-bottom-width: .3vw;
+    border-bottom-color: #5A5B6D;
+}
+
+
+#text-box2 {
+    width: 30vw;
+    left: 65vw;
+}
+
+
+.image-holder {
+    position: absolute;
+    bottom: 0vw;
+    right: 4.1vw;
+    background-size: cover;
+}
+
+
+.image-holder:after {
+    content: ' ';
+    position: absolute;
+    left: 4.1vw;
+    top: 4.1vw;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color:darkgray;
+}
+
+#im1 {
+    right: 4.1vw;
+    width: 60vw;
+    height: 45vw;
+    background-image: url("../imgmaterial/blackwhitebackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 60vw 40vw;
+    
+}
+
+#im2 {
+    right: 4.1vw;
+    width: 59.2vw;
+    height: 41vw;
+    background-image: url("../imgmaterial/background3.png");
+    background-repeat: no-repeat;
+    background-size: 60vw 35vw;
+}
+
+#im2:after {
+    display: none;
+}
+
+#im3 {
+    right: 67.2vw;
+    width: 26.1vw;
+    height: 41vw;
+    background-image: url("../images/who-we-are-1.png");
+}
+
+#im4 {
+    left: 6.56vw;
+    width: 54.5vw;
+    height: 31.1vw;
+    background-image: url("../imgmaterial/shimp.png");
+    background-size: contain;
+}
+
+#im5 {
+    right: 44vw;
+    width: 49vw;
+    height: 30vw;
+    bottom: 11vw;
+    background-image: url("../imgmaterial/map.JPG");
+}
+
+#im6 {
+    right: 4.1vw;
+    width: 37vw;
+    height: 41vw;
+    background-image: url("../images/location-2.png");
+}
+
+#im6:after {
+    display: none;
+}
+
+#im7 {
+    right: 4.1vw;
+    width: 60vw;
+    height: 45vw;
+    background-image: url("../imgmaterial/shimp.png");
+}
+
+#im8{
+    right: 45vw;
+    width:40vw;
+    height: 30vw;
+    bottom: 5vw;
+    background-image: url("../imgmaterial/food.jpg");
+}
+
+#im9{
+    right:45vw;
+    width: 32vw;
+    height: 45vw;
+    bottom:5vw;
+    background-image: url("../imgmaterial/tea.jpg");
+}
+
+#im10 {
+    right: 55vw;
+    width: 39vw;
+    height: 30vw;
+    bottom: 11vw;
+    background-image: url("../imgmaterial/map.JPG");
+}
+
+#im11 {
+    top:12vw;
+    right: 4.1vw;
+    width: 45vw;
+    height: 35vw;
+    background-image: url("../images/maplocation.jpg");
+}
+
+#im11:after {
+    display: none;
+}
+
+.icon1 {
+    
+  width: 6vw;
+  height:6vw;
+/*  background-color: pink;*/
+  background-image: url("../icons/login.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+    background-size: contain;
+    z-index: 4;
+}
+
+.brand-items {
+    display: flex;
+    flex-direction: column;
+    font-family: 'eczarbold';
+    position: absolute;
+    align-items: center;
+    width: 58vw;
+    height: 100%;
+}
+
+.name-text-lg {
+    position: absolute;
+    font-size: 10vw;
+    font-family: 'eczarbold';
+    color:grey;
+    top: 4.4vw;
+    z-index: 2;
+}
+
+#clearall{
+    position: relative;
+    font-size: 2vw;
+    top:-1.5vw;
+    left:50vw;
+    width:17vw;
+    height: 3vw;
+    background-color: white;
+}
+
+#intro-text1 {
+    z-index: 1;
+    top: -3vw;
+    left: 16vw;
+    font-size: 11vw;
+}
+
+#intro-text2 {
+    left: 15vw;
+    top: 7vw;
+    left: 25vw;
+    font-size: 11vw;
+}
+
+#location-text1 {
+    font-size: 7vw;
+}
+
+#menu-text {
+    position: relative;
+    font-size: 4vw;
+    text-align: center;
+    top: 20vw;
+}
+
+#menu-text1{
+    top:24vw;
+    left:60vw;
+    font-size: 12vw;
+}
+
+#menu-text2{
+    top:24vw;
+    left:60vw;
+    font-size: 12vw;
+}
+#menu-text2:after{
+    display:none;
+}
+
+#myreservationlist{
+    font-size: 5vw;
+    width:50vw;
+    position: relative;
+    left:6vw;
+}
+
+#myreservationlistcheck{
+    font-size: 5vw;
+    width:50vw;
+    position: relative;
+    left:20vw;
+    color:floralwhite;
+}
+
+.name-text-sm {
+    position: absolute;
+    font-size: 4.9vw;
+    font-family: 'eczarbold';
+    color: #ACB9C8;
+    top: 24vw;
+    line-height: 1.4;
+    z-index: 2;
+}
+
+/*** .name-text-sm:after {
+    position: absolute;
+    took me 1 hr to find this centring hack
+    on the web (next 3 lines)
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 7vw;
+    content: '';
+    width: 5vw;
+    height: 0.5vw;
+    background: #ACB9C8;
+    bottom: -0.8vw;
+} 
+*/
+
+#payment{
+    width:18vw;
+    left:65vw;
+    top:3vw;
+    font-size: 4vw;
+    text-align: center;
+    background-color: white;
+}
+#payment:after{
+    top:5vw;
+    width: 3vw
+}
+
+#payment > a{
+    color:black;
+    text-decoration: none;
+}
+
+#menu-text0{
+    position: relative;
+    top:17vw;
+    font-size: 8vw;
+    padding-right: 0vw;
+    margin-right: 0vw;
+    text-align: center;
+}
+#menu-text0:after{
+    display:none;
+}
+#menu-text0 a {
+    padding: 0 0 0 0;
+    border-bottom-width: 0vw;
+}
+
+#menu-button {
+    color: beige
+}
+
+#menu-button:hover {
+    color: rgb(60, 0, 0);
+}
+
+#line {
+    z-index: 2;
+    top: 25vw;
+    left:18vw;
+
+}
+
+#intro-descr {
+    color: #A78B7D;
+    text-align: center;
+    font-size: 1.7vw;
+    top: 30vw;
+    left:12vw;
+}
+
+#intro-descr:after {
+    display: none;
+}
+
+.glass {
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 14%;
+    position: absolute;
+    top: 68%;
+    z-index: 2;
+
+}
+
+#footer-glass {
+    top: 50%;
+}
+
+#glass-icon-4 {
+    width: 15%;
+
+    margin-left: 2%;
+}
+
+#glass-icon-5 {
+    width: 15%;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+#glass-icon-6 {
+    width: 15%;
+    margin-left: 2%;
+}
+
+#social-icon-1 {
+    width: 1.5vw;
+    margin-left: 2vw;
+}
+
+#social-icon-2 {
+    width: 3vw;;
+    margin-right: 1vw;
+}
+
+#social-icon-1:hover {
+    position: relative;
+    bottom: 3px;
+}
+
+#social-icon-2:hover {
+    position: relative;
+    bottom: 3px;
+}
+
+.intro-text-part {
+    width: 55vw;
+    height: 30vw;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding-top: 5vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    font-family: "eczarbold";
+    color: beige;
+    font-size: 2vw;
+    
+}
+
+#cart-display{
+    font-size: 3vw;
+    font-family: eczarbold;
+    height: auto;
+    padding-bottom: 10vw;
+}
+#cart-display > div{
+    font-size: 2vw;
+    font-family: "space-mono";
+    color:#ACB9C8;
+}
+
+#cart-display-drink{
+    font-size: 3vw;
+    font-family: eczarbold;
+    height: auto;
+    padding-bottom: 10vw;
+}
+#cart-display-drink > div{
+    font-size: 2vw;
+    font-family: "space-mono";
+    color:#ACB9C8;
+}
+
+
+#location-info {
+    padding: 0vw;
+    padding-top: 15vw;
+    height: 20vw;
+    top: 20vw;
+    font-size: 2vw;
+    width: 20vw;
+    margin-right: 0vw;
+    padding-right: 0vw;
+}
+
+#input-part{
+    margin-top: 5vw;
+    text-align: center;
+    height: auto;
+}
+
+#reser-info{
+    
+    text-align: center;
+    height: auto;
+    
+}
+
+.footer {
+    display: flex;
+    background-image: url(../imgmaterial/background4.png);
+    background-size: cover;
+    width: 88.9vw;
+    height: 25vw;
+    margin-top: 15vw;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+
+}
+
+.footer-box {
+    position: relative;
+    width: 30vw;
+    height: 25vw;
+    align-items: center;
+
+}
+
+#footer-lg {
+    position: relative;
+    text-align: center;
+    color: lightsteelblue;
+    font-size: 3vw;
+    top: 6vw;
+}
+
+#footer-sm {
+    position: relative;
+    color: lightsteelblue;
+    font-size: 2vw;
+    top: 6vw;
+    text-align: center;
+}
+
+#footer-hours {
+    font-size: 2vw;
+    font-family: "space-mono";
+}
+
+
+.menu-item{
+    text-align: left;
+    font-size:1.8vw;
+    font-family: 'eczarbold';
+    color:#ACB9C8;
+    padding-left: 2vw;
+}
+.menu-item-des{
+    text-align: left;
+    font-size:1.2vw;
+    font-family: 'eczarbold';
+    color:#ACB9C8;
+    width: 23vw;
+    margin-bottom: 1vw;
+    padding-left: 2vw;
+}
+.order-one{
+    position:relative;
+    height: 5vw;
+    width:15vw;
+    font-size: 3vw;
+    font-family: "eczarbold";
+    color:#ACB9C8;
+    margin-top:-12vw;
+    padding-bottom: 6vw;
+    left:40vw;
+}
+.order-one > button{
+    height: 3.5vw;
+    font-size: 2vw;
+    font-family: "eczarbold";
+    color:black;
+}
+.delete-me{
+    margin-left: 35vw;
+    margin-top: -3vw;
+}
+.delete-me > button{
+    font-size: 1.3vw;
+    font-family: "eczarbold";
+    color:black;
+    height:2.5vw;
+
+}
+
+#menuclicked{
+    background-color: saddlebrown;
+    width: 2.8vw;
+    height: 1.5vw;
+    margin-bottom: 0vw;
+    padding-top:0.6vw;
+    margin-top:-0.6vw;
+}
+#contactclicked{
+    background-color: saddlebrown;
+    width: 3.5vw;
+    height: 1.5vw;
+    margin-bottom: 0vw;
+    padding-top:0.6vw;
+    margin-top:-0.6vw;
+}
+#reserveclicked{
+    background-color: saddlebrown;
+    width: 12vw;
+    height: 2vw;
+    margin-top: -2vw;
+    z-index: -1;
+}
+
+.reserveBoxName{
+    color: white;
+    font-size: 1.5vw;
+    font-family: "eczarbold";
+    text-align: left;
+}
+
+.reservebox{
+    height: 3vw;
+    width: 25vw;
+    font-size: 1.9vw;
+    font-family: "eczarbold";
+}
+
+#itemdes{
+   height: 15vw;
+}
+
+#butt{
+    width: 10vw;
+    font-size: 2vw;
+    font-family: "eczarbold";
+    color:black;
+}
+
+.delReser{
+    width: 20vw;
+    font-size: 1.5vw;
+    font-family: "eczarbold";
+    color:black;
+}
+
+tr{
+    justify-content: center;
+}
+
+td{
+    width: 27vw;
+    text-align: center;
+}
+
+#buttPlace{
+    text-align: center;
+    height: auto;
+}
+
+#menubutton{
+    width: 10vw;
+    font-size: 2vw;
+    font-family: "eczarbold";
+    color:black;
+}
+
+.menuimg{
+    background-size: cover;
+    background-size:contain;
+    width: 30vw;
+    height: 15vw;
+    left: auto;
+}
+
+
+#userbottom{
+    font-family: "eczarbold";
+    width: 6vw;
+    font-size: 1.2vw;
+}
+
+#Usertype{
+    font-family: "eczarbold";
+    width: 6.8vw;
+    font-size: 1.2vw;
+}
+
+#signIn1 {
+    font-size: 6vw;
+}
+
+#signIn2 {
+    font-size: 3vw;
+}

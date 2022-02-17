@@ -1,0 +1,35 @@
+stages:
+  - buildweb
+  - buildapi
+
+buildweb:
+  stage: buildweb
+  script:
+    - echo "Build the web html"
+    - pwd
+    - ls -l 
+    - cp -r Prototype/. /mnt/hjh/web/
+  only:
+    - developer
+    - master
+  tags:
+    - hcn2
+
+buildapi:
+  stage: buildapi
+  script:
+    - echo "stage"
+    - if [ "$(docker ps | grep cmp370)" ]; then docker stop cmp370; else echo "cmp370 has stopped"; fi
+    - echo 'docker stop cmp370'
+    - if [ "$(docker ps -a| grep cmp370)" ]; then docker rm cmp370; else echo "cmp370 has deleted"; fi
+    - echo 'docker rm cmp370'
+    - if [ "$(docker images | grep cmp370)" ]; then docker rmi cmp370; else echo "cmp370 image has deleted"; fi
+    - echo "docker rmi cmp370"
+    - cd API
+    - docker build -t cmp370 .
+    - docker run -d -p 5000:5000 --name cmp370 cmp370
+  only:
+    - developer
+    - master
+  tags:
+    - hcn2
