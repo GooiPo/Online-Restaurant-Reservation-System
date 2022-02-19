@@ -1,4 +1,5 @@
 # Online-Restaurant-Reservation-System
+[Demo Link](/demo.pdf)
 
 ## Table of contents
 * [1. Product Vision](#1-product-vision)
@@ -13,7 +14,10 @@
 
 * The product we have developed is a restaurant website. The main user group are the customers and the restaurant manager or employee.  From the customer's perspective, they can browse information about this restaurant and make reservations. Each reservation included their ordered foods which can be modified after the reservation is made. From the restaurant manager perspective, they can see the reservation in a list form. If some reservations are invalid, they can modify or even cancel it. On the other hand, the manager can modify the menu page information. Add or delete the menu item, change the menu item image exc. 
 
-* For more detail check out out project [Domain Diagram, ](https://git.cs.usask.ca/cmpt370/cmpt370-unname-project/-/wikis/Milestone-4)[Class Diagram, ](uploads/5ebba3b5ff41c65a7d548411843c1a8b/CMPT370_M6_ClassDiagram.pdf)[Sequence Diagram](uploads/671d60a65f2aaff010294a62d60c1a51/CMPT370_M6__Interaction_Diagram.pdf)
+![UML Diagram](/img/UML.png)
+![Functions Diagram](/img/JavaScript_Function.png)
+![Class Diagram](/img/Class_diagram.png)
+![Sequence Diagram](/img/Sequence_diagram.png)
 
 ## 2. Architecture
 * As the picture showed, We used the standard web architecture - restful architecture. 
@@ -27,7 +31,7 @@ which means, the API server will transfer the data in the database to a JSON fil
 .
  * In general, our system architecture follows the restful architectural style. Using API server to implement the connection between front-end and back-end.  
 
-* [Architecture](https://git.cs.usask.ca/cmpt370/cmpt370-unname-project/-/wikis/uploads/9a5b22b454eb53ff86fcfad8eedce9e9/CMPT370_M5.pdf)
+![Architecture](/img/Architecture.png)
 
 ## 3. Personas
 
@@ -39,7 +43,7 @@ which means, the API server will transfer the data in the database to a JSON fil
   * Bob - employee in the restaurant
 
 ## 4. Epics
-* [Epics Graph](uploads/041d3a2ba3c90b6f5f51c15b0670a5be/CMPT355_M5_EPICS_GRAPH.pdf)
+![Epics Graph](/img/EPICS_GRAPH.png)
 * As Mario, I want the reservation system to check the user type-in.
 * As a worker in the restaurant, the website can tell people what this restaurant about. Provide information about the restaurant.
 
@@ -88,7 +92,7 @@ which means, the API server will transfer the data in the database to a JSON fil
 3. Functions needed to be implemented in the API part have been updated.
 4. Most bad code formats have been updated.
 5. Functions that could modify the database(update data or insert new data) could throw exceptions if something goes wrong.
-Test [report](uploads/1fe241a0f3eb128278aae90ccd0ec13e/test.pdf) after Code inspection. 
+Test [report](test_report.pdf) after Code inspection. 
 
 ## 7. Acceptance test results
 
